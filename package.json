@@ -1,0 +1,126 @@
+{
+  "name": "folder-projects",
+  "displayName": "Folder Projects",
+  "description": "Set root directories and every subdirectory becomes a project — switch between them instantly.",
+  "version": "0.0.1",
+  "publisher": "lucasprag",
+  "homepage": "https://github.com/lucasprag/vscode-folder-projects/blob/main/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucasprag/vscode-folder-projects"
+  },
+  "bugs": {
+    "url": "https://github.com/lucasprag/vscode-folder-projects/issues",
+    "email": "projects@lucasprag.com"
+  },
+  "icon": "media/logo.png",
+  "engines": {
+    "vscode": "^1.86.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "folderProjects.switchProject",
+        "title": "Folder Projects: Switch Project",
+        "icon": "$(folder-active)"
+      },
+      {
+        "command": "folderProjects.openSettings",
+        "title": "Folder Projects: Open Settings",
+        "icon": "$(settings-gear)"
+      },
+      {
+        "command": "folderProjects.refresh",
+        "title": "Folder Projects: Refresh",
+        "icon": "$(refresh)"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "folderProjects.switchProject",
+          "when": "view == folderprojects",
+          "group": "navigation"
+        },
+        {
+          "command": "folderProjects.refresh",
+          "when": "view == folderprojects",
+          "group": "navigation"
+        }
+      ]
+    },
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "folderprojects-explorer",
+          "title": "Folder Projects",
+          "icon": "media/folderprojects-dark.svg"
+        }
+      ]
+    },
+    "views": {
+      "folderprojects-explorer": [
+        {
+          "id": "folderprojects",
+          "name": "Projects",
+          "icon": "media/folderprojects-dark.svg",
+          "contextualTitle": "Folder Projects"
+        }
+      ]
+    },
+    "viewsWelcome": [
+      {
+        "view": "folderprojects",
+        "contents": "No root directories configured.\n[Add root directories](command:folderProjects.openSettings)"
+      }
+    ],
+    "configuration": [
+      {
+        "title": "Folder Projects",
+        "properties": {
+          "folderprojects.roots": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "default": [],
+            "markdownDescription": "List of root directories. All immediate subdirectories become projects. Supports `~` and environment variables. Example: `[\"~/Projects\", \"~/Work\"]`"
+          },
+          "folderprojects.ignore": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "default": [],
+            "markdownDescription": "Glob patterns for folders to ignore. Patterns without `/` are matched against the folder name; patterns with `/` are matched against the full path. Example: `[\".*\", \"node_modules\", \"*/archived\"]`"
+          }
+        }
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "lint": "eslint src"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.130",
+    "@types/vscode": "^1.86.0",
+    "@typescript-eslint/eslint-plugin": "^8.16.0",
+    "@typescript-eslint/parser": "^8.16.0",
+    "eslint": "^9.16.0",
+    "typescript": "^5.2.2",
+    "typescript-eslint": "^8.59.3"
+  },
+  "packageManager": "pnpm@11.1.2",
+  "dependencies": {
+    "minimatch": "^10.2.5"
+  }
+}
