@@ -38,6 +38,21 @@
         "command": "folderProjects.refresh",
         "title": "Folder Projects: Refresh",
         "icon": "$(refresh)"
+      },
+      {
+        "command": "folderProjects.license.enter",
+        "title": "Enter License Key",
+        "category": "Folder Projects"
+      },
+      {
+        "command": "folderProjects.license.buy",
+        "title": "Buy License",
+        "category": "Folder Projects"
+      },
+      {
+        "command": "folderProjects.license.deactivate",
+        "title": "Deactivate License",
+        "category": "Folder Projects"
       }
     ],
     "menus": {
@@ -91,6 +106,11 @@
             "default": [],
             "markdownDescription": "List of root directories. All immediate subdirectories become projects. Supports `~` and environment variables. Example: `[\"~/Projects\", \"~/Work\"]`"
           },
+          "lucasprag.licenseKey": {
+            "type": "string",
+            "default": "",
+            "markdownDescription": "Shared license key for all lucasprag VS Code extensions. Set once here (standalone or bundle key) and every installed lucasprag extension will pick it up automatically."
+          },
           "folderprojects.ignore": {
             "type": "array",
             "items": {
@@ -121,6 +141,7 @@
   },
   "packageManager": "pnpm@11.1.2",
   "dependencies": {
+    "@lucasprag/vscode-license": "file:../vscode-license",
     "minimatch": "^10.2.5"
   }
 }
