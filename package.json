@@ -11,7 +11,7 @@
   },
   "bugs": {
     "url": "https://github.com/lucasprag/vscode-folder-projects/issues",
-    "email": "projects@lucasprag.com"
+    "email": "lucasprag.projects@gmail.com"
   },
   "icon": "media/logo.png",
   "engines": {
@@ -25,8 +25,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "folderProjects.switchProject",
-        "title": "Folder Projects: Switch Project",
+        "command": "folderProjects.listProjectsToOpen",
+        "title": "Folder Projects: List Projects to Open",
         "icon": "$(folder-active)"
       },
       {
@@ -58,7 +58,7 @@
     "menus": {
       "view/title": [
         {
-          "command": "folderProjects.switchProject",
+          "command": "folderProjects.listProjectsToOpen",
           "when": "view == folderprojects",
           "group": "navigation"
         },

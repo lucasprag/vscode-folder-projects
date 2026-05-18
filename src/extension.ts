@@ -32,7 +32,7 @@ export function activate(context: vscode.ExtensionContext) {
 
   context.subscriptions.push(
     view,
-    vscode.commands.registerCommand("folderProjects.switchProject", switchProject),
+    vscode.commands.registerCommand("folderProjects.listProjectsToOpen", listProjectsToOpen),
     vscode.commands.registerCommand("folderProjects.openSettings", openSettings),
     vscode.commands.registerCommand("folderProjects.refresh", () => provider.refresh()),
     vscode.commands.registerCommand("folderProjects.openProject", (path: string) => {
@@ -59,7 +59,7 @@ export function activate(context: vscode.ExtensionContext) {
   }
 }
 
-async function switchProject() {
+async function listProjectsToOpen() {
   const projects = getProjects();
 
   if (projects.length === 0) {
