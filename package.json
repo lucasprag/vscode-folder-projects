@@ -116,7 +116,7 @@
             "items": {
               "type": "string"
             },
-            "default": [],
+            "default": [".git", "node_modules"],
             "markdownDescription": "Glob patterns for folders to ignore. Patterns without `/` are matched against the folder name; patterns with `/` are matched against the full path. Example: `[\".*\", \"node_modules\", \"*/archived\"]`"
           }
         }
