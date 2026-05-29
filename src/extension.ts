@@ -5,17 +5,12 @@ import { LicenseManager } from "@lucasprag/vscode-license";
 import { FolderProjectsProvider, getProjects } from "./projects";
 import { getRoots } from "./util";
 
-const STORE_ID = 0;           // TODO: Lemon Squeezy store ID
-const PRODUCT_ID = 0;         // TODO: Folder Projects product ID
-const BUNDLE_PRODUCT_ID = 0;  // TODO: lucasprag bundle product ID
-const CHECKOUT_URL = "";      // TODO: Lemon Squeezy checkout URL
-
 export function activate(context: vscode.ExtensionContext) {
   const license = new LicenseManager(context, {
-    storeId: STORE_ID,
-    productIds: [PRODUCT_ID, BUNDLE_PRODUCT_ID],
+    organizationId: "d2232643-dd19-4377-84a8-3c671011baa4",
+    benefitId: "f481d7d7-1518-4572-ae0a-21a576c7fbd0",
     extensionName: "Folder Projects",
-    checkoutUrl: CHECKOUT_URL,
+    checkoutUrl: "https://buy.polar.sh/polar_cl_ibAYkhoQLRrkGwfysneBiYH0Cl3xceKB5olQv1skJjc",
     commandPrefix: "folderProjects.license",
     gracePeriodDays: 7,
     reminderIntervalDays: 3,
