@@ -27,8 +27,8 @@ export function activate(context: vscode.ExtensionContext) {
     forcePopup: isDev,
     extensionName: "Folder Projects",
     commandPrefix: "folderProjects.license",
-    gracePeriodDays: 7,
-    reminderIntervalDays: 3,
+    gracePeriodDays: 14,
+    reminderIntervalDays: 30,
   });
 
   license.initialize();

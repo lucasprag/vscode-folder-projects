@@ -8,7 +8,7 @@ No manual project registration. No stale lists. Just point it at where you keep 
 
 ### 1. Switch projects instantly
 
-Run **`Folder Projects: Switch Project`** from the command palette to get a fuzzy-searchable list of every project across all your root directories.
+Run **`Folder Projects: List Projects to Open`** from the command palette to get a fuzzy-searchable list of every project across all your root directories.
 
 ![Command palette showing the Switch Project command](media/command-github.png)
 
@@ -39,7 +39,7 @@ Use the `folderprojects.ignore` setting to filter out folders you never want to 
 
 | Command | Description |
 | --- | --- |
-| `Folder Projects: Switch Project` | Open a quick pick to fuzzy-find and switch to any project. |
+| `Folder Projects: List Projects to Open` | Open a quick pick to fuzzy-find and switch to any project. |
 | `Folder Projects: Refresh` | Re-scan all root directories and update the tree view. |
 | `Folder Projects: Open Settings` | Jump straight to the Folder Projects configuration. |
 
@@ -56,7 +56,7 @@ If `folderprojects.roots` is empty, Folder Projects will prompt you to configure
 
 1. Install **Folder Projects** from the Marketplace.
 2. Open VS Code settings and add your root directories to `folderprojects.roots` — for example `["~/Projects"]`.
-3. Run **`Folder Projects: Switch Project`** from the command palette — or click the **Folder Projects** icon in the Activity Bar.
+3. Run **`Folder Projects: List Projects to Open`** from the command palette — or click the **Folder Projects** icon in the Activity Bar.
 4. Select a project and you're there.
 
 ## Free to use — supported by you

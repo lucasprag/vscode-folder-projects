@@ -2,7 +2,7 @@
   "name": "folder-projects",
   "displayName": "Folder Projects",
   "description": "Set root directories and every subdirectory becomes a project — switch between them instantly.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "lucasprag",
   "homepage": "https://github.com/lucasprag/vscode-folder-projects/blob/main/README.md",
   "repository": {
