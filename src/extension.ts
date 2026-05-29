@@ -24,6 +24,7 @@ export function activate(context: vscode.ExtensionContext) {
   const license = new LicenseManager(context, {
     ...polar,
     sandbox: isDev,
+    forcePopup: isDev,
     extensionName: "Folder Projects",
     commandPrefix: "folderProjects.license",
     gracePeriodDays: 7,
