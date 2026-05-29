@@ -10,12 +10,18 @@ No manual project registration. No stale lists. Just point it at where you keep 
 
 Run **`Folder Projects: Switch Project`** from the command palette to get a fuzzy-searchable list of every project across all your root directories.
 
+![Command palette showing the Switch Project command](media/command-github.png)
+
+![Fuzzy-searchable list of projects](media/list-of-projects-github.png)
+
 - Each item shows the **project name**, the **root it belongs to**, and its **full path**.
 - Select one and VS Code opens that folder immediately.
 
 ### 2. Browse projects from the Activity Bar
 
 A dedicated **Folder Projects** icon is added to the Activity Bar. Click it to see all your projects organized by root directory.
+
+![Activity Bar panel showing projects grouped by root directory](media/acitivity-bar-github.png)
 
 - Root directories are listed as collapsible sections.
 - Click any project to open it in VS Code.
@@ -53,8 +59,38 @@ If `folderprojects.roots` is empty, Folder Projects will prompt you to configure
 3. Run **`Folder Projects: Switch Project`** from the command palette — or click the **Folder Projects** icon in the Activity Bar.
 4. Select a project and you're there.
 
+## Free to use — supported by you
+
+**Folder Projects is free.** It's MIT-licensed and fully functional out of the box, with no feature gating.
+
+After a 14-day grace period, a polite popup appears about once a month asking you to support continued development with a **one-time license purchase**:
+
+- One-time payment, lifetime use, unlimited devices
+- One license stops the popup permanently
+- Your license helps fund bug fixes, VS Code API updates, and new features
+
+The cadence is intentional: this model **relies on long-term value building, not short-term annoyance**. If the extension is genuinely useful to you, you'll feel like supporting it. If it isn't, you've lost nothing — keep using it for free.
+
+If you find Folder Projects useful in your daily work, please consider buying a license — it's the only way the project stays maintained.
+
+---
+
 ## Check out my other extensions
 
 Folder Projects is one of a few VS Code extensions I build and maintain. You can find the full list — along with the projects and articles I'm working on — at [lucasprag.com](https://lucasprag.com/).
 
-**Thank you**
+---
+
+## Support
+
+Found a bug, have a feature idea, or just want to say hi? Reach out at:
+
+&#108;&#117;&#99;&#97;&#115;&#112;&#114;&#97;&#103;&#46;&#112;&#114;&#111;&#106;&#101;&#99;&#116;&#115;&#32;&#91;&#97;&#116;&#93;&#32;&#103;&#109;&#97;&#105;&#108;&#32;&#91;&#100;&#111;&#116;&#93;&#32;&#99;&#111;&#109;
+
+(replace `[at]` with `@` and `[dot]` with `.`)
+
+---
+
+## License
+
+[MIT](LICENSE).
