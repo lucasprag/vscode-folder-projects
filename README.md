@@ -59,19 +59,18 @@ If `folderprojects.roots` is empty, Folder Projects will prompt you to configure
 3. Run **`Folder Projects: List Projects to Open`** from the command palette — or click the **Folder Projects** icon in the Activity Bar.
 4. Select a project and you're there.
 
-## Free to use — supported by you
+## Free to use — powered by your reviews
 
-**Folder Projects is free.** It's MIT-licensed and fully functional out of the box, with no feature gating.
+**Folder Projects is free.** It's MIT-licensed, fully functional out of the box, with no feature gating, no license keys, and nothing to buy — now or later.
 
-After a 14-day grace period, a polite popup appears about once a month asking you to support continued development with a **one-time license purchase**:
+There is one thing that genuinely helps: **a review**. Marketplace ratings are how small extensions get discovered, and they cost you nothing but a minute.
 
-- One-time payment, lifetime use, unlimited devices
-- One license stops the popup permanently
-- Your license helps fund bug fixes, VS Code API updates, and new features
+- [Rate on the VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=lucasprag.folder-projects&ssr=false#review-details)
+- [Rate on Open VSX](https://open-vsx.org/extension/lucasprag/folder-projects/reviews)
 
-The cadence is intentional: this model **relies on long-term value building, not short-term annoyance**. If the extension is genuinely useful to you, you'll feel like supporting it. If it isn't, you've lost nothing — keep using it for free.
+You can also run **`Folder Projects: Leave a Review`** from the command palette at any time.
 
-If you find Folder Projects useful in your daily work, please consider buying a license — it's the only way the project stays maintained.
+After 14 days of use a single, non-modal notification asks for a review. It shows up at most a few times, and rating or dismissing it stops it for good. If the extension isn't useful to you, dismiss it and keep using it for free — nothing changes either way.
 
 ---
 

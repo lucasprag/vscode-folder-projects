@@ -22,4 +22,4 @@ SOFTWARE.
 
 ---
 
-This project is MIT licensed. It is sustained by license purchases — if you find it useful, consider supporting its development.
+This project is MIT licensed and free to use. If you find it useful, the best way to support it is to leave a review on the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=lucasprag.folder-projects&ssr=false#review-details) or [Open VSX](https://open-vsx.org/extension/lucasprag/folder-projects/reviews).
